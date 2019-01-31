@@ -1,5 +1,9 @@
 <?php
 
+/*
+ *
+ */
+
 class C
 {
     public function doSomething()
