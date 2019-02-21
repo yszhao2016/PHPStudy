@@ -10,31 +10,31 @@
  *
  * @author zys
  */
-interface  Iterator extends Traversable
+interface Iterator extends Traversable
 {
-  
+
     /**
      * 获取当前内部标量指向的元素的数据
      */
-    abstract public function current();
+    public function current();
+
     /**
      * 获取当前标量
      */
-    abstract public function key();
+    public function key();
 
     /**
      * 移动到下一个标量
      */
-    abstract public function next();
+    public function next();
 
     /**
      * 重置标量
      */
-    abstract public function rewind();
+    public function rewind();
 
     /**
      * 检查当前标量是否有效
      */
-   abstract public function valid();
-
+    public function valid();
 }
