@@ -1,4 +1,6 @@
 .idea/
 /nbproject/private/
 /.idea
+/Yii2/yii2-adv/vendor/
+/PHP/Container/vendor/
 nbproject
