@@ -23,7 +23,7 @@
 5.配置服务器
     /tomcat/conf/server.xml
 
-6.启动tomcat
+6.启动tomcat  需要等会儿8005端口起来
     /tomcat/bin/startup.sh
 
 7.检查tomcat 是否启动成功

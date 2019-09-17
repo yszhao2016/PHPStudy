@@ -13,7 +13,7 @@ messagePath: 存储消息文件的路径，这应与配置中 i18n 的 basePath 
 
 
     'language' => 'zh-CN',
-    'components' => [
+ //   'components' => [
         'i18n' => [
             'translations' => [
                 '*' => [
