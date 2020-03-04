@@ -47,15 +47,19 @@
 
 **四、证书**
     
-    CA证书 （SSL证书、代码签名证书、电子邮件证书）
-       
-        
+    CA（Certification Authority）证书 （SSL证书、代码签名证书、电子邮件证书）
+ 
         SSL证书就是传统意义的超文本传输协议的安全版本
-        
+       
+             
         SSL证书   根据验证级别  
        
             域名型SSL证书，简称DVSSL;
             企业型SSL证书，简称OVSSL;
             增强型SSL证书，简称EVSSL;
             
+            
  **五、签名**
+ 
+ 
+ 
