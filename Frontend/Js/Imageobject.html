@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //image  加载
+        function loadImage(url, callback) {
+            //创建一个Image对象，实现图片的预下载
+            var img = new Image();
+            img.src = url;
+            console.log('----111----');
+            // 如果图片已经存在于浏览器缓存，直接调用回调函数
+            if (img.complete) {
+                console.log('aabb');
+                callback(img);
+                // 直接返回，不用再处理onload事件
+
+                return ;
+            }
+            img.onload = function() {
+                console.log('----333----');
+                //图片下载完毕时异步调用callback函数
+                callback(img);
+            }
+            console.log('----222----');
+        }
+        function call(img) {
+            // 有权访问另一个函数作用域内变量的函数都是闭包
+            // $(img).appendTo('.box');
+            dom = document.getElementsByClassName("box");
+            dom[0].append(img);
+        }
+
+        loadImage('https://www.vhieg.com/data/attachment/forum/202003/fda3bd6151a4c326643d75fc42422a0e.jpg',call);
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div> 1111</div>
+    </div>
+</body>
+</html>

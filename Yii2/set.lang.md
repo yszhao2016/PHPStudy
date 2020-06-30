@@ -22,6 +22,7 @@ messagePath: 存储消息文件的路径，这应与配置中 i18n 的 basePath 
 //                    'basePath' => '@app/messages',
                     'fileMap' => [
                         'app' => 'app.php'   //可以加多个，是yii::t里面的第一个参数名  文件名
+                        //不要用app 不要用app 不要用app  系统已经占用
                     ],
                     //'basePath' => '/message', //配置语言文件路径，现在采用默认的，就可以不配置这个
                 ],

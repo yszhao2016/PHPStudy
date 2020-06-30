@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function _new(/* 构造函数 */ constructor, /* 构造函数参数 */ params) {
+            // 将 arguments 对象转为数组
+
+            var args = [].slice.call(arguments);
+
+            // 取出构造函数
+            var constructor = args.shift();
+            // 创建一个空对象，继承构造函数的 prototype 属性
+            var context = Object.create(constructor.prototype);
+            console.log(context);
+            // 执行构造函数
+            var result = constructor.apply(context, args);
+            // 如果返回结果是对象，就直接返回，否则返回 context 对象
+            return (typeof result === 'object' && result != null) ? result : context;
+        }
+        
+        function Person(a,b) {
+            this.a = a;
+            this.b = b;
+        }
+        // 实例
+        var actor = _new(Person, '张三', 28);
+        // console.log(actor.a);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
