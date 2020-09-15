@@ -1,4 +1,6 @@
 创建表流程
+$query->createCommand()->getRawSql()
+
 1.yii/yii.bat   migration/create  create_xxx_table
 
 2.migrations 目录产生相应文件

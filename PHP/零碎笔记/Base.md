@@ -1,6 +1,6 @@
 #PHP基础
 
-    特殊函数
+#特殊函数
 
         call_user_func()       回调方法 function
         
@@ -48,3 +48,8 @@
 
 
         array_unshift()
+
+
+#正则表达式
+    
+    preg_replace('/<img.*?class="bbcode-img".*?src="(.*?)".*?>/','<a class="fancybox-effects-a"  href="\\1">\\0</a>',$res['message'])
