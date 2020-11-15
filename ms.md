@@ -5,8 +5,25 @@
     利用类的放射机制
     
 2. 跨域问题
+    
+    1、jsonp跨域
+        JSONP（JSON with Padding：填充式JSON)，应用JSON的一种新方法，
+        JSON、JSONP的区别：
+          1、JSON返回的是一串数据、JSONP返回的是脚本代码(包含一个函数调用)
+          2、JSONP 只支持get请求、不支持post请求
+          (类似往页面添加一个script标签，通过src属性去触发对指定地址的请求,故只能是Get请求)
 
-
+    2.PHP端修改header
+        header(‘Access-Control-Allow-Origin:*’);//允许所有来源访问
+        header(‘Access-Control-Allow-Method:POST,GET’);//允许访问的方式      
+    CORS 跨域资源共享
+    
+    3、nginx反向代理：
+　　www.baidu.com/index.html需要调用www.sina.com/server.php，
+    可以写一个接口www.baidu.com/server.php，
+    由这个接口在后端去调用www.sina.com/server.php并拿到返回值，
+    然后再返回给index.html
+     
 
 3.接口安全性 
   
@@ -67,7 +84,7 @@
     
     XSS
     DDOS
-    CSRF
+    CSRF（Cross-site request forgery），中文名称：跨站请求伪造
     SQL注入
     
 10.防止表单重复提交问题
