@@ -438,6 +438,7 @@ class Container extends Component
         foreach ($b as $index => $dependency) {
             $a[$index] = $dependency;
         }
+
         return $a;
     }
 

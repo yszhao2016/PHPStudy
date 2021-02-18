@@ -62,3 +62,12 @@ docker build -t  docker id/新容器名   目录
 
 
 
+docker pause      容器名   #暂停容器
+docker unpause    容器名   #恢复容器运行
+
+
+docker stop     容器名     #容器中执行exit 就回到此状态  
+docker start -i 容器名
+
+docker tag 原镜像名  新镜像名
+dokcer  rmi 镜像名
