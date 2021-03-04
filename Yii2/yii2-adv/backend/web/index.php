@@ -1,6 +1,6 @@
 <?php
-defined('YII_DEBUG') or define('YII_DEBUG', false);
-defined('YII_ENV') or define('YII_ENV', 'prod');
+defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_ENV') or define('YII_ENV', 'dev');
 
 require __DIR__ . '/../../vendor/autoload.php';          //自动加载
 require __DIR__ . '/../../vendor/yiisoft/yii2/Yii.php';  //实例化 容器对象 等等

@@ -205,7 +205,7 @@ abstract class Application extends Module
 
         $this->state = self::STATE_BEGIN;
 
-        $this->preInit($config);
+        $this->preInit($config);    //配置  检测基本路径是否存在 设置路径别名
 
         $this->registerErrorHandler($config);
 
