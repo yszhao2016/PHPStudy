@@ -736,7 +736,7 @@ class Module extends ServiceLocator
      * Since version 2.0.13, if a component isn't defined in the module, it will be looked up in the parent module.
      * The parent module may be the application.
      */
-    public function get($id, $throwException = true)
+    public function  get($id, $throwException = true)
     {
         if (!isset($this->module)) {
             return parent::get($id, $throwException);
