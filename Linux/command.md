@@ -1,4 +1,4 @@
-Centos强制踢掉某登陆用户    
+#Centos强制踢掉某登陆用户    
 
     w  查看登录用户  如下
     
@@ -18,9 +18,14 @@ find . | xargs grep -ri "IBM"
 find . | xargs grep -ril "IBM
 
 
-    添加用户
+#添加用户
+    groupadd 用户组名
+    useradd 用户名 -g 用户组
 
-useradd 用户名 -g 用户组
+    示例：
+        groupadd www
+        useradd -g www -s /sbin/nologin www
+        
 
-groupadd 用户组名
+
 

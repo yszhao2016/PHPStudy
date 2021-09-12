@@ -51,7 +51,7 @@
     docker run \
     --name web-php \
     -d -p 9000:9000 \
-    -v /web/php-fpm/etc/:/usr/local/etc/php \
+    -v /web/php-fpm/etc/:/usr/local/etc/\
     -v /web/nginx/web:/var/www/html \
     -v /web/localtime:/etc/localtime:ro \
     --link web-mysql \
@@ -68,14 +68,14 @@
      
      
      docker run \
-     --name web-nginx \
+     --name nginx-php7.1 \
      -d -p 80:80 \
      -v /web/nginx/conf/nginx.conf:/etc/nginx/nginx.conf/  \
      -v /web/nginx/conf/conf.d:/etc/nginx/conf.d \
-     -v /web/nginx/web:/usr/share/nginx/html  \
+     -v /home/www/htdocs/php:/usr/share/nginx/html  \
      -v /web/nginx/logs:/var/log/nginx/  \
      -v /etc/localtime:/etc/localtime:ro \
-     --link web -php \
+     --link php7.1 \
      436be79de93f
      
      

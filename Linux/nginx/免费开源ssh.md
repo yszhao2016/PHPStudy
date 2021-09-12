@@ -5,7 +5,7 @@
 
 
     certbot certonly --preferred-challenges dns --manual -d webstudy.cc -d *.webstudy.cc --server https://acme-v02.api.letsencrypt.org/directory
-
+certbot certonly --preferred-challenges dns --manual -d vhieg.com -d *.vhieg.com --server https://acme-v02.api.letsencrypt.org/directory
     报错
         pip uninstall urllib3
         pip install urllib3

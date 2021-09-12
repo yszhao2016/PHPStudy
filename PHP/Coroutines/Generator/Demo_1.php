@@ -9,6 +9,7 @@ function Xrange($start, $end, $step = 1)
     for ($start; $start <= $end; $start += $step)
     {
         yield $start;
+
     }
 }
 
