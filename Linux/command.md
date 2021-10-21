@@ -1,4 +1,4 @@
-Centos强制踢掉某登陆用户    
+#Centos强制踢掉某登陆用户    
 
     w  查看登录用户  如下
     
@@ -18,12 +18,15 @@ linux下查找目录下的所有文件中是否包含指定字符串
     find . | xargs grep -ril "IBM
 
 
-添加用户
-
-    useradd 用户名 -g 用户组
+#添加用户
     groupadd 用户组名
-    groupadd www
-    useradd -g www -s /sbin/nologin www
+    useradd 用户名 -g 用户组
+
+    示例：
+        groupadd www
+        useradd -g www -s /sbin/nologin www
+        
+
 
 后台执行命令
 

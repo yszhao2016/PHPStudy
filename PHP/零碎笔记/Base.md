@@ -1,5 +1,9 @@
 #PHP基础
+        strpos(param1,param2，param3)   从param1中的param3位置搜索param2出现的位置  返回位置
+        
+        strncmp(param1,param2,param3)   比较 0 相等  -1 小于  1 大于   第三个参数  规定每个字符串用于比较的字符数。
 
+        substr(string,start,length)     截取字符串
 #特殊函数
 
         call_user_func()       回调方法 function
