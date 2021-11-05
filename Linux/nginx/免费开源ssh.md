@@ -6,11 +6,11 @@
 
     certbot certonly --preferred-challenges dns --manual -d webstudy.cc -d *.webstudy.cc --server https://acme-v02.api.letsencrypt.org/directory
 certbot certonly --preferred-challenges dns --manual -d vhieg.com -d *.vhieg.com --server https://acme-v02.api.letsencrypt.org/directory
-    报错
-        pip uninstall urllib3
-        pip install urllib3
-        pip install --upgrade six
-        yum install python-urllib3 -y
+报错
+pip uninstall urllib3
+pip install urllib3
+pip install --upgrade six
+yum install python-urllib3 -y
 
 
 
@@ -29,13 +29,13 @@ certbot移除证书的方法【先移除后删除】：
     certbot revoke --cert-path /etc/letsencrypt/archive/www.mydomain.com/cert1.pem
 
 第二步：运行命令
-    certbot delete
+certbot delete
 
 然后会提示域名对应的编号数字，输入对应数字则删除证书
 
 
 
- nginx 配置
+nginx 配置
 
      ssl_certificate /etc/letsencrypt/live//vhieg.com/fullchain.pem;
      ssl_certificate_key /etc/letsencrypt/live//vhieg.com/privkey.pem;
