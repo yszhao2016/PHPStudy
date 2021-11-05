@@ -33,6 +33,8 @@ linux下查找目录下的所有文件中是否包含指定字符串
         nohup command &
         nohup command >> myout.file 2>&1&
         
+        
+        
 添加开机启动执行命令
 
         chmod +x /etc/rc.d/rc.local  

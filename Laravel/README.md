@@ -1,3 +1,3 @@
-//        DB::connection()->enableQueryLog();
+//        \DB::connection()->enableQueryLog();
 //        $test = $query->get();
-//        print_r(DB::getQueryLog());exit;
+//        print_r(\DB::getQueryLog());exit;

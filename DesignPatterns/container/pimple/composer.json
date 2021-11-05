@@ -1,5 +1,11 @@
 {
     "require": {
-        "pimple/pimple": "^3.2"
+        "pimple/pimple": "^3.2",
+        "w7corp/easywechat": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "PimpleClass\\":"class"
+        }
     }
 }
