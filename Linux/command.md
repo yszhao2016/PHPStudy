@@ -30,15 +30,21 @@ linux下查找目录下的所有文件中是否包含指定字符串
 
 后台执行命令
 
-        nohup command &
-        nohup command >> myout.file 2>&1&
+     nohup command &
+     nohup command >> myout.file 2>&1&
         
         
         
 添加开机启动执行命令
 
-        chmod +x /etc/rc.d/rc.local  
-        vim /etc/rc.d/rc.local
+     chmod +x /etc/rc.d/rc.local  
+     vim /etc/rc.d/rc.local
+        
+        
+修改当前目录下文件夹或文件权限
+
+    find ./  -type d -exec chmod 755 {} \;
+    find ./  -type f -exec chmod 644 {} \;        
        
         
         

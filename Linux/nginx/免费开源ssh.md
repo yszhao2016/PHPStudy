@@ -37,5 +37,5 @@ certbot delete
 
 nginx 配置
 
-     ssl_certificate /etc/letsencrypt/live//vhieg.com/fullchain.pem;
-     ssl_certificate_key /etc/letsencrypt/live//vhieg.com/privkey.pem;
+     ssl_certificate /etc/letsencrypt/live/vhieg.com/fullchain.pem;
+     ssl_certificate_key /etc/letsencrypt/live/vhieg.com/privkey.pem;
